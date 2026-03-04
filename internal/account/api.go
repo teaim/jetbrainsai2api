@@ -137,7 +137,7 @@ func RefreshJetbrainsJWT(account *core.JetbrainsAccount, httpClient *http.Client
 	state, _ := data["state"].(string)
 	tokenStr, _ := data["token"].(string)
 
-	if state == "PAID" && tokenStr != "" {
+	if (state == "PAID" || state == "NONE") && tokenStr != "" {
 		var expiryTime time.Time
 		expiryTime, err := util.ParseJWTExpiry(tokenStr)
 		if err != nil {
