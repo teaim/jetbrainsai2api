@@ -3,7 +3,7 @@ package core
 // JetBrains API Header constants
 const (
 	JetBrainsHeaderUserAgent   = "ktor-client"
-	JetBrainsHeaderGrazieAgent = `{"name":"aia:pycharm","version":"251.26094.80.13:251.26094.141"}`
+	JetBrainsHeaderGrazieAgent = `{"name":"aia:dataspell","version":"253.30387.186:253.30387.154"}`
 	HeaderGrazieAgent          = "grazie-agent"
 	HeaderGrazieAuthJWT        = "grazie-authenticate-jwt"
 	HeaderAcceptCharset        = "Accept-Charset"
